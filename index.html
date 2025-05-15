@@ -107,11 +107,13 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>NUS</span>,
+            <span class="author-block"><sup>1</sup>National University of Singapore</span>,
             <span class="author-block"><sup>2</sup>TUB</span>,
             <span class="author-block"><sup>3</sup>TUM</span>,
           </div>
-
+            <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>&dagger;</sup>Equal Contribution</span>
+            </div>
            <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
@@ -246,7 +248,38 @@
               style="width:100%; height:auto; border-radius: 5px;"
             />
           </div>
+          <!-- Slide 9 -->
+          <div class="item item-scene9">
+            <img
+              src="./static/images/Warehouse/Level_1.0037.png"
+              alt="Generated Scene 9"
+              style="width:100%; height:auto; border-radius: 5px;"
+            />
         </div>
+          <!-- Slide 10 -->
+          <div class="item item-scene10">
+            <img
+              src="./static/images/Warehouse/Level_2.0227.png"
+              alt="Generated Scene 10"
+              style="width:100%; height:auto; border-radius: 5px;"
+            />
+          </div>
+          <!-- Slide 11 -->
+          <div class="item item-scene11">
+            <img
+              src="./static/images/Warehouse/Level_3.0138.png"
+              alt="Generated Scene 11"
+              style="width:100%; height:auto; border-radius: 5px;"
+            />
+          </div>
+          <!-- Slide 12 -->
+          <div class="item item-scene12">
+            <img
+              src="./static/images/Warehouse/Level_4_multi1.png"
+              alt="Generated Scene 12"
+              style="width:100%; height:auto; border-radius: 5px;"
+            />
+          </div>
       </div>
     </div>
   </section>
@@ -325,15 +358,90 @@
                 <div class="row is-full-width">
 
 
-                    <h2 class="title is-3" style="display: flex; justify-content: center; align-items: center;"><span class="dvima">Manipulation</span></h2>
+                    <h2 class="title is-3" style="display: flex; justify-content: center; align-items: center;"><span class="dvima">Task Generator</span></h2>
                     <!-- <img src="videos/pipeline.m4v" class="interpolation-image" alt=""
                         style="display: block; margin-left: auto; margin-right: auto; max-width: 80%;" /> -->
                         <br>
                         <span style="font-size: 125%">
-                        <span style="font-weight: bold">Since all large and small objects are placed in the scene separately, they become naturally interactive when powered by a physics engine, opening up opportunities to collect large-scale robot manipulation data in complex scenarios.</span>
+                          <style>
+                            /*— table look-and-feel, có thể tuỳ chỉnh hoặc gỡ bỏ nếu dùng framework —*/
+                            .task-modes {
+                              width: 100%;
+                              border-collapse: collapse;
+                              margin: 1rem 0;
+                              font-size: 0.95rem;
+                            }
+                            .task-modes th,
+                            .task-modes td {
+                              border: 1px solid #555;
+                              padding: 0.5rem 0.75rem;
+                              text-align: left;
+                            }
+                            .task-modes th {
+                              background: #1e1e1e;         /* dark header (tương tự screenshot) */
+                              color: #fff;
+                            }
+                            .task-modes code {
+                              background: #333;
+                              color: #e8e8e8;
+                              padding: 2px 4px;
+                              border-radius: 4px;
+                              font-size: 0.85em;
+                            }
+                            .task-modes .center {
+                              text-align: center;
+                            }
+                          </style>
+                          
+                          <ul>
+                            <li><strong>Variety of Task Modes for robots and pedestrians</strong></li>
+                          </ul>
+                          
+                          <table class="task-modes">
+                            <thead>
+                              <tr>
+                                <th>Task Mode</th>
+                                <th>Short Description</th>
+                                <th>Robots</th>
+                                <th>Obstacles</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><code>scenario</code></td>
+                                <td>load scenario file</td>
+                                <td class="center">✓</td>
+                                <td class="center">✓</td>
+                              </tr>
+                              <tr>
+                                <td><code>random</code></td>
+                                <td>generate random positions</td>
+                                <td class="center">✓</td>
+                                <td class="center">✓</td>
+                              </tr>
+                              <tr>
+                                <td><code>parametrized</code></td>
+                                <td>more fine-tuned random</td>
+                                <td class="center"></td>
+                                <td class="center">✓</td>
+                              </tr>
+                              <tr>
+                                <td><code>guided</code></td>
+                                <td>waypoint sequence</td>
+                                <td class="center">✓</td>
+                                <td class="center"></td>
+                              </tr>
+                              <tr>
+                                <td><code>explore</code></td>
+                                <td>explore map</td>
+                                <td class="center">✓</td>
+                                <td class="center"></td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </span>
                         <video autoplay controls muted loop playsinline height="100%">
-                          <source src="./static/videos/architect-teaser3.mp4"
+                          <source src=".static/videos/Demo-Task-Generator-Panel.mp4"
                                   type="video/mp4">
                         </video>
 
@@ -390,7 +498,7 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@inproceedings{wangarchitect,
-  title={Architect: Generating Vivid and Interactive 3D Scenes with Hierarchical 2D Inpainting},
+  title={Demonstrating Arena 5.0: A Photorealistic ROS2 Simulation Framework for Developing and Benchmarking Social Navigation},
   author={Wang, Yian and Qiu, Xiaowen and Liu, Jiageng and Chen, Zhehuan and Cai, Jiting and Wang, Yufei and Wang, Tsun-Hsuan and Xian, Zhou and Gan, Chuang},
   booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
 }</code></pre>
