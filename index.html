@@ -39,7 +39,7 @@
         width: 100%;
         border-collapse: collapse;
         margin: 1rem 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #ffffff;
     }
     .task-modes th,
@@ -65,7 +65,7 @@
     /* Custom styles for feature list */
     .feature-item {
         margin-bottom: 1.5rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #000000;
     }
     .feature-item ul {
@@ -222,12 +222,12 @@
 </section>
 
 
-  <section class="section" style="padding: 0">
+  <section class="section" style="padding: 0; margin: 30px 0;">
       <div class="container is-max-desktop">
           <!-- Abstract. -->
           <div class="columns is-centered has-text-centered">
               <video poster="" id="" autoplay controls loop width="100%" playbackRate=2.0 style="border-radius: 5px;">
-                  <source src="./static/videos/architect-teaser2.mp4" type="video/mp4">
+                  <source src="./static/videos/arena_gen_video.mp4" type="video/mp4">
               </video>
           </div>
       </div>
@@ -405,7 +405,7 @@
 
 
 <section class="section">
-    <div class="container is-max-widescreen">
+    <div class="container is-max-desktop">
         <div class="rows">
             <div class="rows is-centered ">
                 <div class="row is-full-width">
@@ -416,9 +416,9 @@
                         style="display: block; margin-left: auto; margin-right: auto; max-width: 80%;" /> -->
                         <br>
 
-                        <span style="font-size: 125%">
+                        <span style="font-size: 75%">
                           <!-- Feature: Automatic Installation -->
-                          <div class="feature-item">
+                          <div class="feature-item" style="font-size: 150%"> 
                               <ul>
                                   <li>Automatic installation script for the arena rosnav environment</li>
                                   <li>4 different simulators including <a href = "https://github.com/Arena-Rosnav#isaac">Isaac Sim</a>, <a href="https://github.com/Arena-Rosnav#unity"> Unity</a>, <a href="https://github.com/Arena-Rosnav#gazebo">Gazebo </a> and <a href="https://github.com/Arena-Rosnav#flatland">Flatland</a></li>
@@ -427,7 +427,7 @@
                                   <li>Variety of Task Modes for robots and pedestrians</li>
                                 </ul>
                           </div>              
-                          <table class="task-modes">
+                          <table class="task-modes" style="font-size: 150%">
                             <thead>
                               <tr>
                                 <th>Task Mode</th>
@@ -436,7 +436,7 @@
                                 <th>Obstacles</th>
                               </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="color:#000000">
                               <tr>
                                 <td><code>scenario</code></td>
                                 <td>load scenario file</td>
@@ -469,7 +469,7 @@
                               </tr>
                             </tbody>
                           </table>
-                        <div class="feature-item">
+                        <div class="feature-item mt-2" style="font-size: 150%">
                           <ul>
                               <li>Diverse Robot Models</li>
                               <li>Variety of <a href="https://github.com/Arena-Rosnav#supported-robots">Robots</a> including the go1 quadruped robot</li>
@@ -482,7 +482,7 @@
                           </ul>
                          
                   </span>
-                        <video autoplay controls muted loop playsinline height="100%">
+                        <video autoplay controls muted loop playsinline height="100%" class="mt-4">
                           <source src="./static/videos/task_generator_panel.mp4"
                                   type="video/mp4">
                         </video>
@@ -497,7 +497,7 @@
       <div class="container is-max-widescreen">
           <div class="rows">
               <div class="rows is-centered ">
-                  <div class="row is-full-width">
+                  <div class="row is-full-width has-text-centered">
                       <h2 class="title is-3"><span class="dvima">Generated Worlds</span></h2>
                       <p style="font-size: 125%">
                           Please select an image below to view the results.
@@ -537,7 +537,7 @@
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
     <pre><code>@inproceedings{Arena-Rosnav,
   title={Demonstrating Arena 5.0: A Photorealistic ROS2 Simulation Framework for Developing and Benchmarking Social Navigation},
   author={Volodymyr Shcherbyna, Linh Kästner, Duc Anh Do, Hoang Tung, Huu Giang Nguyen, Maximilian Ho-Kyoung Schreff, Tim Seeger, Eva Wiese, Ahmed Martban, Huajian Zeng, An Tran, Nguyen Quoc Hung, Jonas Kreutz, Vu Thanh Lam, Ton Manh Kien, Harold Soh},
