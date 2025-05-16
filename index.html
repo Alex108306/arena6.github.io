@@ -33,7 +33,66 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 <!--  <link rel="icon" href="./static/images/favicon.svg">-->
-
+  <style>
+    /* Section background */
+    .section {
+        background: linear-gradient(135deg, #1a2a44 0%, #0d1a2d 100%);
+        color: #ffffff;
+    }
+    /* Custom styles for task-modes table */
+    .task-modes {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+        font-size: 1rem;
+        background: #2a3b55;
+        color: #ffffff;
+    }
+    .task-modes th,
+    .task-modes td {
+        border: 1px solid #4a5b75;
+        padding: 0.5rem 0.75rem;
+        text-align: left;
+    }
+    .task-modes th {
+        background: #1e2a44;
+        color: #ffffff;
+    }
+    .task-modes td a {
+        color: #00b7eb;
+        text-decoration: none;
+    }
+    .task-modes td a:hover {
+        text-decoration: underline;
+    }
+    .task-modes .center {
+        text-align: center;
+    }
+    /* Custom styles for feature list */
+    .feature-item {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        color: #e8e8e8;
+    }
+    .feature-item ul {
+        list-style-type: disc; /* Ensure bullets are visible */
+        margin-left: 1.5rem;
+    }
+    .feature-item a {
+        color: #00b7eb;
+        text-decoration: none;
+    }
+    .feature-item a:hover {
+        text-decoration: underline;
+    }
+    .dvima {
+        font-weight: bold;
+        color: #ffffff;
+    }
+    .title.is-3 {
+        color: #ffffff !important;
+    }
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -367,46 +426,13 @@
                           <!-- Feature: Automatic Installation -->
                           <div class="feature-item">
                               <ul>
-                                  <li><strong>Automatic installation script for the arena rosnav environment</strong></li>
-                                  <li><strong>4 different simulators including <a href = "https://github.com/Arena-Rosnav#isaac">Isaac Sim</a>, <a href="https://github.com/Arena-Rosnav#unity"> Unity</a>, <a href="https://github.com/Arena-Rosnav#gazebo">Gazebo </a> and <a href="https://github.com/Arena-Rosnav#flatland">Flatland</a></strong></li>
-                                  <li><strong>We offer prebuilt, realistic simulation environments, including offices, hospitals, canteens warehouses, and much more</strong></li>
-                                  <li><strong>Dynamic Map Generation including dynamic mazes</strong></li>
+                                  <li>Automatic installation script for the arena rosnav environment</li>
+                                  <li>4 different simulators including <a href = "https://github.com/Arena-Rosnav#isaac">Isaac Sim</a>, <a href="https://github.com/Arena-Rosnav#unity"> Unity</a>, <a href="https://github.com/Arena-Rosnav#gazebo">Gazebo </a> and <a href="https://github.com/Arena-Rosnav#flatland">Flatland</a></li>
+                                  <li>We offer prebuilt, realistic simulation <a href="https://github.com/Arena-Rosnav#supported-worlds">environments</a>, including offices, hospitals, canteens warehouses, and much more</li>
+                                  <li>Dynamic Map Generation including dynamic mazes</li>
+                                  <li>Variety of Task Modes for robots and pedestrians</li>
                                 </ul>
-                          </div>
-                          <style>
-                            /*— table look-and-feel, có thể tuỳ chỉnh hoặc gỡ bỏ nếu dùng framework —*/
-                            .task-modes {
-                              width: 100%;
-                              border-collapse: collapse;
-                              margin: 1rem 0;
-                              font-size: 0.95rem;
-                            }
-                            .task-modes th,
-                            .task-modes td {
-                              border: 1px solid #555;
-                              padding: 0.5rem 0.75rem;
-                              text-align: left;
-                            }
-                            .task-modes th {
-                              background: #1e1e1e;         /* dark header (tương tự screenshot) */
-                              color: #fff;
-                            }
-                            .task-modes code {
-                              background: #333;
-                              color: #e8e8e8;
-                              padding: 2px 4px;
-                              border-radius: 4px;
-                              font-size: 0.85em;
-                            }
-                            .task-modes .center {
-                              text-align: center;
-                            }
-                          </style>
-                          
-                          <ul>
-                            <li><strong>Variety of Task Modes for robots and pedestrians</strong></li>
-                          </ul>
-                          
+                          </div>              
                           <table class="task-modes">
                             <thead>
                               <tr>
@@ -451,72 +477,16 @@
                           </table>
                         <div class="feature-item">
                           <ul>
-                              <li><strong>Diverse Robot Models</strong></li>
+                              <li>Diverse Robot Models</li>
+                              <li>Variety of <a href="https://github.com/Arena-Rosnav#supported-robots">Robots</a> including the go1 quadruped robot</li>
+                              <li>Variety of <a href = "https://github.com/Arena-Rosnav#supported-planners">Planners</a> including our own DRL planner ROSNavRL</li>
+                              <li>Variety of social force models for pedestrians</li>
+                              <li>Pipeline for evaluating approaches and analysing them based on standard metrics with our Arena Evaluation package</li>
+                              <li>Pipeline to train planner agents based on reinforcement learning approaches from stable baselines3</li>
+                              <li>Modular and flexible structure for extension of new functionalities and approaches</li>
+                              <li>Fully integrated Move Base Flex in our Arena-Rosnav ecosystem</li>
                           </ul>
-                          <p>
-                              Work with a variety of robots, including the <strong>Unitree Go1 quadruped</strong>, TurtleBot3, Jackal, and more. Each robot is equipped with sensors like laser scanners for realistic navigation.
-                          </p>
-                      </div>
-
-                      <!-- Feature: Variety of Planners -->
-                      <div class="feature-item">
-                          <ul>
-                              <li><strong>Advanced Planners</strong></li>
-                          </ul>
-                          <p>
-                              Utilize a range of planners, including our custom <strong>ROSNavRL</strong> (DRL-based), TEB, DWA, MPC, and others. Combine traditional and learning-based approaches for optimal performance.
-                          </p>
-                      </div>
-
-                      <!-- Feature: Social Force Models -->
-                      <div class="feature-item">
-                          <ul>
-                              <li><strong>Social Force Models for Pedestrians</strong></li>
-                          </ul>
-                          <p>
-                              Simulate realistic pedestrian behavior with a variety of social force models, including group dynamics and human-robot interactions, powered by frameworks like HuNavSim.
-                          </p>
-                      </div>
-
-                      <!-- Feature: Evaluation Pipeline -->
-                      <div class="feature-item">
-                          <ul>
-                              <li><strong>Evaluation Pipeline</strong></li>
-                          </ul>
-                          <p>
-                              Benchmark navigation approaches using our Arena Evaluation package. Analyze performance with standard metrics like efficiency, safety, and smoothness.
-                          </p>
-                      </div>
-
-                      <!-- Feature: Training Pipeline -->
-                      <div class="feature-item">
-                          <ul>
-                              <li><strong>Training Pipeline</strong></li>
-                          </ul>
-                          <p>
-                              Train planner agents using reinforcement learning with <strong>Stable Baselines3</strong>. Customize training through a user-friendly interface and deploy agents seamlessly.
-                          </p>
-                      </div>
-
-                      <!-- Feature: Modular Structure -->
-                      <div class="feature-item">
-                          <ul>
-                              <li><strong>Modular and Flexible Structure</strong></li>
-                          </ul>
-                          <p>
-                              Extend Arena-ROSNav with new functionalities and approaches thanks to its modular structure. Integrate custom planners, environments, or simulators with ease.
-                          </p>
-                      </div>
-
-                      <!-- Feature: Move Base Flex Integration -->
-                      <div class="feature-item">
-                          <ul>
-                              <li><strong>Move Base Flex Integration</strong></li>
-                          </ul>
-                          <p>
-                              Fully integrated with <strong>Move Base Flex</strong>, our ecosystem enhances navigation performance and supports customization for diverse robotic applications.
-                          </p>
-                      </div>
+                         
                   </span>
                         <video autoplay controls muted loop playsinline height="100%">
                           <source src="./static/videos/task_generator_panel.mp4"
