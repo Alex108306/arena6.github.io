@@ -358,10 +358,52 @@
                 <div class="row is-full-width">
 
 
-                    <h2 class="title is-3" style="display: flex; justify-content: center; align-items: center;"><span class="dvima">Task Generator</span></h2>
+                    <h2 class="title is-3" style="display: flex; justify-content: center; align-items: center;"><span class="dvima">Features</span></h2>
                     <!-- <img src="videos/pipeline.m4v" class="interpolation-image" alt=""
                         style="display: block; margin-left: auto; margin-right: auto; max-width: 80%;" /> -->
                         <br>
+
+                        <span style="font-size: 125%">
+                          <!-- Feature: Automatic Installation -->
+                          <div class="feature-item">
+                              <ul>
+                                  <li><strong>Automatic Installation Script</strong></li>
+                              </ul>
+                              <p>
+                                  Streamline your setup with our automatic installation script for the Arena-ROSNav environment. Get started quickly on Linux or Windows by following the installation guide in our documentation.
+                              </p>
+                          </div>
+
+                          <!-- Feature: Multiple Simulators -->
+                          <div class="feature-item">
+                              <ul>
+                                  <li><strong>Multiple Simulators</strong></li>
+                              </ul>
+                              <p>
+                                  Choose from four powerful simulators: <strong>Isaac Sim</strong>, <strong>Unity</strong>, <strong>Gazebo</strong>, and <strong>Flatland</strong>. Each offers unique capabilities, from photorealistic rendering to efficient 2D simulations.
+                              </p>
+                          </div>
+
+                          <!-- Feature: Prebuilt Environments -->
+                          <div class="feature-item">
+                              <ul>
+                                  <li><strong>Realistic Simulation Environments</strong></li>
+                              </ul>
+                              <p>
+                                  Explore prebuilt, realistic simulation environments including offices, hospitals, canteens, warehouses, and more. These environments are designed to mimic real-world scenarios for robust testing.
+                              </p>
+                          </div>
+
+                          <!-- Feature: Dynamic Map Generation -->
+                          <div class="feature-item">
+                              <ul>
+                                  <li><strong>Dynamic Map Generation</strong></li>
+                              </ul>
+                              <p>
+                                  Generate dynamic maps and mazes on-the-fly using our advanced map generation tools. Create varied layouts to test navigation algorithms in diverse settings.
+                              </p>
+                          </div>
+
                         <span style="font-size: 125%">
                           <style>
                             /*— table look-and-feel, có thể tuỳ chỉnh hoặc gỡ bỏ nếu dùng framework —*/
@@ -439,7 +481,75 @@
                               </tr>
                             </tbody>
                           </table>
-                        </span>
+                        <div class="feature-item">
+                          <ul>
+                              <li><strong>Diverse Robot Models</strong></li>
+                          </ul>
+                          <p>
+                              Work with a variety of robots, including the <strong>Unitree Go1 quadruped</strong>, TurtleBot3, Jackal, and more. Each robot is equipped with sensors like laser scanners for realistic navigation.
+                          </p>
+                      </div>
+
+                      <!-- Feature: Variety of Planners -->
+                      <div class="feature-item">
+                          <ul>
+                              <li><strong>Advanced Planners</strong></li>
+                          </ul>
+                          <p>
+                              Utilize a range of planners, including our custom <strong>ROSNavRL</strong> (DRL-based), TEB, DWA, MPC, and others. Combine traditional and learning-based approaches for optimal performance.
+                          </p>
+                      </div>
+
+                      <!-- Feature: Social Force Models -->
+                      <div class="feature-item">
+                          <ul>
+                              <li><strong>Social Force Models for Pedestrians</strong></li>
+                          </ul>
+                          <p>
+                              Simulate realistic pedestrian behavior with a variety of social force models, including group dynamics and human-robot interactions, powered by frameworks like HuNavSim.
+                          </p>
+                      </div>
+
+                      <!-- Feature: Evaluation Pipeline -->
+                      <div class="feature-item">
+                          <ul>
+                              <li><strong>Evaluation Pipeline</strong></li>
+                          </ul>
+                          <p>
+                              Benchmark navigation approaches using our Arena Evaluation package. Analyze performance with standard metrics like efficiency, safety, and smoothness.
+                          </p>
+                      </div>
+
+                      <!-- Feature: Training Pipeline -->
+                      <div class="feature-item">
+                          <ul>
+                              <li><strong>Training Pipeline</strong></li>
+                          </ul>
+                          <p>
+                              Train planner agents using reinforcement learning with <strong>Stable Baselines3</strong>. Customize training through a user-friendly interface and deploy agents seamlessly.
+                          </p>
+                      </div>
+
+                      <!-- Feature: Modular Structure -->
+                      <div class="feature-item">
+                          <ul>
+                              <li><strong>Modular and Flexible Structure</strong></li>
+                          </ul>
+                          <p>
+                              Extend Arena-ROSNav with new functionalities and approaches thanks to its modular structure. Integrate custom planners, environments, or simulators with ease.
+                          </p>
+                      </div>
+
+                      <!-- Feature: Move Base Flex Integration -->
+                      <div class="feature-item">
+                          <ul>
+                              <li><strong>Move Base Flex Integration</strong></li>
+                          </ul>
+                          <p>
+                              Fully integrated with <strong>Move Base Flex</strong>, our ecosystem enhances navigation performance and supports customization for diverse robotic applications.
+                          </p>
+                      </div>
+                  </span>
                         <video autoplay controls muted loop playsinline height="100%">
                           <source src="./static/videos/task_generator_panel.mp4"
                                   type="video/mp4">
@@ -469,10 +579,6 @@
                   <!-- <p style="font-size: 1.5em"><b>Isaac</b></p> -->
 
                   <div class="col-md-4 col-sm-4 col-xs-4">
-                      <img src="./static/images/Hospital/Hospital_Level_1.png" width="24%" style="border-radius: 10px;" onclick="populateDemo(this, 1);">
-                      <img src="./static/images/Hospital/Hospital_Level_2.png" width="24%" style="border-radius: 10px;" onclick="populateDemo(this, 1);">
-                      <img src="./static/images/Hospital/Hospital_Level_3.png" width="24%" style="border-radius: 10px;" onclick="populateDemo(this, 1);">
-                      <img src="./static/images/Hospital/Hospital_Level_4.png" width="24%" style="border-radius: 10px;" onclick="populateDemo(this, 1);">
                       <img src="./static/images/Office/Office_Level_1.png" width="24%" style="border-radius: 10px;" onclick="populateDemo(this, 1);">
                       <img src="./static/images/Office/Office_Level_2.png" width="24%" style="border-radius: 10px;" onclick="populateDemo(this, 1);">
                       <img src="./static/images/Office/Office_Level_3.png" width="24%" style="border-radius: 10px;" onclick="populateDemo(this, 1);">
