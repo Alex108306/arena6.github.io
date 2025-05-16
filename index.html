@@ -542,6 +542,7 @@
 
       // Use the same src in the expanded image as the image being clicked on from the grid
       expandImg.src = imgs.src.replace(".png", ".mp4");
+      expandImg.src = expandImg.src.replace("images", "videos");
       var video = document.getElementById('demo-video-' + num);
       // or video = $('.video-selector')[0];
       video.pause()
