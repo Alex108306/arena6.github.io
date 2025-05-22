@@ -355,71 +355,48 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-<!--     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
+<!-- Motivation Section -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
-          <p>
-            Social navigation has gained increasing importance across various sectors such as healthcare, logistics, and assistive robotics. Despite its growing adoption, navigating human-centric environments remains a significant challenge. A major concern is bridging the gap between simulation-based research and industry-grade applications (sim2real).
-          </p>
-          <p>
-            Consequently, there is a growing demand for realistic and comprehensive simulation platforms, as emerging approaches must be thoroughly tested and benchmarked prior to real-world deployment. Common issues include non-reproducible research findings and highly specialized outcomes that are difficult to generalize for practical applications. Moreover, many existing platforms continue to rely on legacy software (e.g., ROS1), complicating the transition from simulation to reality and further widening the sim2real gap. This reliance impedes progress and underscores the necessity for updated simulation frameworks that better facilitate technology transfer to industry-grade systems
-          </p>
-          <p>
-            Most open-source benchmarking platforms concentrate on specific navigation aspects without addressing broader concerns such as real-robot integration, deployment, and practical applicability. Owing to varied setups—ranging from in-house simulators to proof-of-concept demonstrations—numerous approaches are overly simplified and challenging to replicate in real-world scenarios. Additionally, many available simulation environments either cater to specialized tasks (e.g., learning-based methods) or offer limited functionality. In contrast, sophisticated state-of-the-art simulators such as Isaac Sim present substantial usability challenges, are not fully open source, and consequently have a restricted user base.
-          </p>
-
-          <p>
-            Arena 5.0 addresses these challenges by providing a comprehensive, open-source framework that integrates photorealistic simulations with practical tools for developing and benchmarking social navigation algorithms. By offering an enhanced world and scenario generation process, as well as a direct link to Isaac Gym, Arena 5.0 enables more realistic and comprehensive evaluations, bridging a critical gap in social navigation research and deployment.
-          </p>
+          <ul>
+            <li>Social navigation faces challenges in bridging simulation-based research and real-world applications</li>
+            <li>Existing platforms often lack reproducibility, generalizability, and comprehensive functionality</li>
+            <li>Legacy software dependencies complicate the transition from simulation to reality</li>
+            <li>Advanced simulators present usability challenges and have restricted accessibility</li>
+            <li>Arena 5.0 provides an open-source framework integrating photorealistic simulations with practical tools</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="container is-full-hd">
-  <hr class="solid">
-</div>
-
+<!-- General Idea Section -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">General Idea</h2>
         <div class="content has-text-justified">
-          <p>
-            Arena is a comprehensive framework designed to bridge the gap between simulation-based research and real-world applications in social robot navigation. At its core, Arena provides a unified platform where researchers and developers can create, test, and benchmark navigation algorithms in photorealistic environments that closely mimic human-centric social settings.
-          </p>
+          <ul>
+            <li>Arena provides a unified platform for creating, testing, and benchmarking navigation algorithms</li>
+            <li>Four key components: Generate Worlds, Spawn Humans, Spawn Robots, and Benchmarking & Task Modes</li>
+            <li>Supports diverse scenarios with realistic human agents and various robot models</li>
+            <li>Integrates NVIDIA Isaac Gym, ROS2, and advanced AI models</li>
+            <li>Enables researchers to focus on algorithm development rather than simulation setup</li>
+          </ul>
           <div class="columns is-centered">
             <div class="column">
               <img src="./static/images/overview.jpg" alt="Arena 5.0 Overview" style="width:100%; border-radius: 5px;">
             </div>
           </div>
-          <p>
-            The framework is structured around four key components as illustrated in the overview: Generate Worlds, Spawn Humans, Spawn Robots, and Benchmarking & Task Modes. This modular architecture allows users to create diverse scenarios ranging from office environments to warehouses and public spaces, populate them with realistic human agents exhibiting social behaviors, deploy various robot models with different navigation capabilities, and evaluate their performance using standardized metrics and customizable task modes.
-          </p>
-          <p>
-            What sets Arena apart is its integration of state-of-the-art technologies including NVIDIA Isaac Gym for photorealistic rendering, ROS2 for robot control and communication, and advanced AI models for generating realistic environments and human behaviors. This integration creates a seamless workflow from environment creation to performance evaluation, enabling researchers to focus on algorithm development rather than simulation setup and configuration.
-          </p>
         </div>
       </div>
     </div>
@@ -441,7 +418,7 @@
                     </span>
                     <br>
                         <video autoplay controls loop playsinline height="100%">
-                          <source src="./static/videos/arena_gen_video.mp4"
+                          <source src="./static/videos/Task_Generator.mp4"
                                   type="video/mp4">
                         </video>
 
@@ -533,11 +510,6 @@
                         </ul>
                        
                 </span>
-                      <video autoplay controls muted loop playsinline height="100%" class="mt-4">
-                        <source src="./static/videos/task_generator_panel.mp4"
-                                type="video/mp4">
-                      </video>
-
               </div>
           </div>
       </div>
@@ -624,12 +596,15 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-3 has-text-centered">BibTeX</h2>
-    <pre><code>@inproceedings{Arena-Rosnav,
-  title={Demonstrating Arena 5.0: A Photorealistic ROS2 Simulation Framework for Developing and Benchmarking Social Navigation},
-  author={Volodymyr Shcherbyna, Linh Kästner, Duc Anh Do, Hoang Tung, Huu Giang Nguyen, Maximilian Ho-Kyoung Schreff, Tim Seeger, Eva Wiese, Ahmed Martban, Huajian Zeng, An Tran, Nguyen Quoc Hung, Jonas Kreutz, Vu Thanh Lam, Ton Manh Kien, Harold Soh},
-  booktitle={Robotics: Science and Systems (RSS) XIX},
-  year={2025},
-}</code></pre>
+    <pre><code>@misc{shcherbyna12024arena40comprehensiveros2,
+      title={Arena 4.0: A Comprehensive ROS2 Development and Benchmarking Platform for Human-centric Navigation Using Generative-Model-based Environment Generation}, 
+      author={Volodymyr Shcherbyna1 and Linh Kästner and Diego Diaz and Huu Giang Nguyen and Maximilian Ho-Kyoung Schreff and Tim Lenz and Jonas Kreutz and Ahmed Martban and Huajian Zeng and Harold Soh},
+      year={2024},
+      eprint={2409.12471},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2409.12471}, }
+</code></pre>
   </div>
 </section>
 
